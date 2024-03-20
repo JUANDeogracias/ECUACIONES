@@ -88,3 +88,15 @@ void menu(){
     printf("\n4. Salir del programa.");
     printf("\nIntroduce una opcion:");
 }
+
+int comprobar_numero(int *num, int min_valido){
+    printf("Introduce un dato\n");
+    do{
+        scanf("%d", num);
+        if(num == min_valido){
+            printf("El valor %d debe de ser distinto de %d. Introduce uno nuevo: \n", num, min_valido);
+        }else{
+            printf("DATO CORRECTAMENTE INTRODUCIDO\n");
+        }
+    }while(num);
+}
